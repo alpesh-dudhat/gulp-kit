@@ -1,0 +1,121 @@
+/* Oxygenfit HTML Template */
+/************ TABLE OF CONTENTS ***************
+1.Fonts
+2.Reset
+**********************************************/
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@200;300;400;600&display=swap");
+@import url("bootstrap.min.css");
+@import url("jquery.fancybox.min.css");
+@import url("swiper-bundle.min.css");
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-size: 14px;
+  outline: 0; }
+
+p {
+  margin-bottom: 0; }
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0; }
+
+a {
+  color: #000; }
+  a:focus {
+    text-decoration: none; }
+  a:hover {
+    color: #acd256;
+    text-decoration: none; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99; }
+  header .main-logo .logo {
+    position: relative;
+    font-family: "Graduate", cursive;
+    font-size: 2.5em;
+    color: #acd256; }
+    header .main-logo .logo span {
+      position: absolute;
+      color: #000; }
+  header .cart {
+    cursor: pointer; }
+    header .cart .cart-img {
+      width: 30px;
+      height: 30px; }
+    header .cart span {
+      position: absolute;
+      right: -5px;
+      top: 0;
+      border-radius: 50px;
+      display: inline-block;
+      background: #acd256;
+      padding: 2px;
+      font-size: 9px;
+      width: 15px;
+      height: 15px;
+      text-align: center;
+      line-height: 15px; }
+    header .cart:hover .drop-list {
+      visibility: visible;
+      opacity: 1;
+      display: block; }
+    header .cart .drop-list {
+      position: absolute;
+      top: 30px;
+      left: auto;
+      right: 0;
+      visibility: hidden;
+      opacity: 0;
+      display: none;
+      padding: 10px;
+      box-shadow: 0 5px 10px 0px #ccc;
+      background: #fff;
+      min-width: 210px;
+      width: 100%;
+      z-index: 2; }
+      header .cart .drop-list li img {
+        width: 60px; }
+      header .cart .drop-list li p {
+        margin-bottom: 0; }
+  header .advance-menu {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100px;
+    background: #acd256;
+    line-height: 50px;
+    cursor: pointer; }
+    header .advance-menu img {
+      width: 20px;
+      height: 20px; }
+
+.main-banner {
+  height: 100vh; }
+  .main-banner .banner-slider .swiper-slide .item {
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; }
+    .main-banner .banner-slider .swiper-slide .item span {
+      color: #fff; }
+    .main-banner .banner-slider .swiper-slide .item h1 {
+      font-size: 60px;
+      line-height: 72px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #acd256; }
+    .main-banner .banner-slider .swiper-slide .item p {
+      color: #0f0f0f; }

@@ -1,0 +1,62 @@
+/* Oxygenfit HTML Template */
+
+/************ TABLE OF CONTENTS ***************
+1.Fonts
+2.Reset
+**********************************************/
+
+
+$primaryfont:'Graduate',
+cursive;
+$secondary-font :'Saira Semi Condensed',
+sans-serif;
+
+// COlORS
+$primary-color:#acd256;
+$secondary-color:#0f0f0f;
+$bg-color :#202125;
+$dark:#000;
+$light:#fff;
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 14px;
+  outline: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: $dark;
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+// CDN Fonts
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@200;300;400;600&display=swap');
+
+// Importing css
+@import url('bootstrap.min.css');
+@import url('jquery.fancybox.min.css');
+@import url('swiper-bundle.min.css');

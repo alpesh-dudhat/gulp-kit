@@ -1,0 +1,100 @@
+// Header Top Menu
+
+header {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  .main-logo {
+    .logo {
+      position: relative;
+      font-family: $primaryfont;
+      font-size: 2.5em;
+      color: $primary-color;
+
+      span {
+        position: absolute;
+        color: $dark;
+      }
+    }
+  }
+
+  .cart {
+    cursor: pointer;
+
+    .cart-img {
+      width: 30px;
+      height: 30px;
+    }
+
+    span {
+      position: absolute;
+      right: -5px;
+      top: 0;
+      border-radius: 50px;
+      display: inline-block;
+      background: $primary-color;
+      padding: 2px;
+      font-size: 9px;
+      width: 15px;
+      height: 15px;
+      text-align: center;
+      line-height: 15px;
+    }
+
+    &:hover {
+      .drop-list {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+      }
+    }
+
+    .drop-list {
+      position: absolute;
+      top: 30px;
+      left: auto;
+      right: 0;
+      visibility: hidden;
+      opacity: 0;
+      display: none;
+      padding: 10px;
+      box-shadow: 0 5px 10px 0px #ccc;
+      background: #fff;
+      min-width: 210px;
+      width: 100%;
+      z-index: 2;
+
+      li {
+
+        img {
+          width: 60px;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+    }
+  }
+
+  .advance-menu {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100px;
+    background: $primary-color;
+    line-height: 50px;
+    cursor: pointer;
+
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
